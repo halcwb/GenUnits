@@ -32,7 +32,89 @@
       <div class="row">
         <div class="span9" id="main">
           
+<p>Create a <code>ValueUnit</code></p>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
+<span class="l">2: </span>
+<span class="l">3: </span>
+<span class="l">4: </span>
+<span class="l">5: </span>
+<span class="l">6: </span>
+<span class="l">7: </span>
+<span class="l">8: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="k">open</span> <span onmouseout="hideTip(event, 'fs1', 1)" onmouseover="showTip(event, 'fs1', 1)" class="i">Informedica</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs2', 2)" onmouseover="showTip(event, 'fs2', 2)" class="i">GenUnits</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs3', 3)" onmouseover="showTip(event, 'fs3', 3)" class="i">Lib</span>
+<span class="k">open</span> <span onmouseout="hideTip(event, 'fs1', 4)" onmouseover="showTip(event, 'fs1', 4)" class="i">Informedica</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs2', 5)" onmouseover="showTip(event, 'fs2', 5)" class="i">GenUnits</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs3', 6)" onmouseover="showTip(event, 'fs3', 6)" class="i">Lib</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs4', 7)" onmouseover="showTip(event, 'fs4', 7)" class="i">Unit</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs5', 8)" onmouseover="showTip(event, 'fs5', 8)" class="i">Units</span>
 
+<span class="k">module</span> <span class="t">CU</span> <span class="o">=</span> <span onmouseout="hideTip(event, 'fs6', 9)" onmouseover="showTip(event, 'fs6', 9)" class="i">CombiUnit</span>
+<span class="k">module</span> <span class="t">VU</span> <span class="o">=</span> <span onmouseout="hideTip(event, 'fs7', 10)" onmouseover="showTip(event, 'fs7', 10)" class="i">ValueUnit</span>
+
+<span class="k">let</span> <span onmouseout="hideTip(event, 'fs8', 11)" onmouseover="showTip(event, 'fs8', 11)" class="i">``500 mg``</span> <span class="o">=</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs9', 12)" onmouseover="showTip(event, 'fs9', 12)" class="f">create</span> <span class="n">500N</span> (<span class="n">1N</span> <span class="o">|&gt;</span> <span class="t">CU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs10', 13)" onmouseover="showTip(event, 'fs10', 13)" class="f">withUnit</span> <span onmouseout="hideTip(event, 'fs11', 14)" onmouseover="showTip(event, 'fs11', 14)" class="i">milliGram</span>)
+<span class="k">let</span> <span onmouseout="hideTip(event, 'fs12', 15)" onmouseover="showTip(event, 'fs12', 15)" class="i">``2 dd``</span>   <span class="o">=</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs9', 16)" onmouseover="showTip(event, 'fs9', 16)" class="f">create</span> <span class="n">2N</span>  (<span class="n">1N</span>  <span class="o">|&gt;</span> <span class="t">CU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs10', 17)" onmouseover="showTip(event, 'fs10', 17)" class="f">withUnit</span> <span onmouseout="hideTip(event, 'fs13', 18)" onmouseover="showTip(event, 'fs13', 18)" class="i">count</span> <span class="o">|&gt;</span> <span class="t">CU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs14', 19)" onmouseover="showTip(event, 'fs14', 19)" class="f">per</span> <span class="n">1N</span> <span onmouseout="hideTip(event, 'fs15', 20)" onmouseover="showTip(event, 'fs15', 20)" class="i">day</span>)
+</code></pre></td>
+</tr>
+</table>
+<p>Print out the <em>value units</em></p>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
+<span class="l">2: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span onmouseout="hideTip(event, 'fs8', 21)" onmouseover="showTip(event, 'fs8', 21)" class="i">``500 mg``</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs16', 22)" onmouseover="showTip(event, 'fs16', 22)" class="f">toString</span>
+<span onmouseout="hideTip(event, 'fs12', 23)" onmouseover="showTip(event, 'fs12', 23)" class="i">``2 dd``</span>   <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs16', 24)" onmouseover="showTip(event, 'fs16', 24)" class="f">toString</span>
+</code></pre></td>
+</tr>
+</table>
+<p>Output:</p>
+<blockquote>
+<p>val it : string = "500 mg"
+val it : string = "2 X/day"</p>
+</blockquote>
+<p>Perform a calculation: 2 X/day * 500 mg = 1000 mg/day</p>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
+<span class="l">2: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="k">let</span> <span onmouseout="hideTip(event, 'fs17', 25)" onmouseover="showTip(event, 'fs17', 25)" class="i">tot</span> <span class="o">=</span> <span onmouseout="hideTip(event, 'fs12', 26)" onmouseover="showTip(event, 'fs12', 26)" class="i">``2 dd``</span> <span class="o">*</span> <span onmouseout="hideTip(event, 'fs8', 27)" onmouseover="showTip(event, 'fs8', 27)" class="i">``500 mg``</span> 
+<span onmouseout="hideTip(event, 'fs17', 28)" onmouseover="showTip(event, 'fs17', 28)" class="i">tot</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs16', 29)" onmouseover="showTip(event, 'fs16', 29)" class="f">toString</span>
+</code></pre></td>
+</tr>
+</table>
+<p>Output:</p>
+<blockquote>
+<p>val it : string = "1000 mg/day"</p>
+</blockquote>
+<p>Convert 1000 mg/day to g/week</p>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
+<span class="l">2: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="k">let</span> <span onmouseout="hideTip(event, 'fs18', 30)" onmouseover="showTip(event, 'fs18', 30)" class="i">``gram/week``</span> <span class="o">=</span> <span class="n">1N</span> <span class="o">|&gt;</span> <span class="t">CU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs10', 31)" onmouseover="showTip(event, 'fs10', 31)" class="f">withUnit</span> <span onmouseout="hideTip(event, 'fs19', 32)" onmouseover="showTip(event, 'fs19', 32)" class="i">gram</span> <span class="o">|&gt;</span> <span class="t">CU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs14', 33)" onmouseover="showTip(event, 'fs14', 33)" class="f">per</span> <span class="n">1N</span> <span onmouseout="hideTip(event, 'fs20', 34)" onmouseover="showTip(event, 'fs20', 34)" class="i">week</span>
+<span onmouseout="hideTip(event, 'fs17', 35)" onmouseover="showTip(event, 'fs17', 35)" class="i">tot</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs21', 36)" onmouseover="showTip(event, 'fs21', 36)" class="f">convertTo</span> <span onmouseout="hideTip(event, 'fs18', 37)" onmouseover="showTip(event, 'fs18', 37)" class="i">``gram/week``</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs16', 38)" onmouseover="showTip(event, 'fs16', 38)" class="f">toString</span>
+</code></pre></td>
+</tr>
+</table>
+<p>Output:</p>
+<blockquote>
+<p>val it : string = "7 g/week"</p>
+</blockquote>
+
+<div class="tip" id="fs1">namespace Informedica</div>
+<div class="tip" id="fs2">namespace Informedica.GenUnits</div>
+<div class="tip" id="fs3">namespace Informedica.GenUnits.Lib</div>
+<div class="tip" id="fs4">module Unit<br /><br />from Informedica.GenUnits.Lib</div>
+<div class="tip" id="fs5">module Units<br /><br />from Informedica.GenUnits.Lib.UnitModule</div>
+<div class="tip" id="fs6">module CombiUnit<br /><br />from Informedica.GenUnits.Lib</div>
+<div class="tip" id="fs7">module ValueUnit<br /><br />from Informedica.GenUnits.Lib</div>
+<div class="tip" id="fs8">val ( 500 mg ) : ValueUnit.ValueUnit<br /><br />Full name: Tutorial.( 500 mg )</div>
+<div class="tip" id="fs9">val create : v:BigRational -&gt; u:CombiUnit.CombiUnit -&gt; ValueUnit.ValueUnit<br /><br />Full name: Informedica.GenUnits.Lib.ValueUnitModule.create</div>
+<div class="tip" id="fs10">val withUnit : u:Unit.Unit -&gt; v:BigRational -&gt; CombiUnit.CombiUnit<br /><br />Full name: Informedica.GenUnits.Lib.CombiUnitModule.withUnit</div>
+<div class="tip" id="fs11">val milliGram : Unit.Unit<br /><br />Full name: Informedica.GenUnits.Lib.UnitModule.Units.milliGram</div>
+<div class="tip" id="fs12">val ( 2 dd ) : ValueUnit.ValueUnit<br /><br />Full name: Tutorial.( 2 dd )</div>
+<div class="tip" id="fs13">val count : Unit.Unit<br /><br />Full name: Informedica.GenUnits.Lib.UnitModule.Units.count</div>
+<div class="tip" id="fs14">val per : (BigRational -&gt; Unit.Unit -&gt; CombiUnit.CombiUnit -&gt; CombiUnit.CombiUnit)<br /><br />Full name: Informedica.GenUnits.Lib.CombiUnitModule.per</div>
+<div class="tip" id="fs15">val day : Unit.Unit<br /><br />Full name: Informedica.GenUnits.Lib.UnitModule.Units.day</div>
+<div class="tip" id="fs16">val toString : vu:ValueUnit.ValueUnit -&gt; string<br /><br />Full name: Informedica.GenUnits.Lib.ValueUnitModule.toString</div>
+<div class="tip" id="fs17">val tot : ValueUnit.ValueUnit<br /><br />Full name: Tutorial.tot</div>
+<div class="tip" id="fs18">val ( gram/week ) : CombiUnit.CombiUnit<br /><br />Full name: Tutorial.( gram/week )</div>
+<div class="tip" id="fs19">val gram : Unit.Unit<br /><br />Full name: Informedica.GenUnits.Lib.UnitModule.Units.gram</div>
+<div class="tip" id="fs20">val week : Unit.Unit<br /><br />Full name: Informedica.GenUnits.Lib.UnitModule.Units.week</div>
+<div class="tip" id="fs21">val convertTo : cu:CombiUnit.CombiUnit -&gt; vu:ValueUnit.ValueUnit -&gt; ValueUnit.ValueUnit<br /><br />Full name: Informedica.GenUnits.Lib.ValueUnitModule.convertTo</div>
 
         </div>
         <div class="span3">
