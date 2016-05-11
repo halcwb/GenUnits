@@ -77,14 +77,14 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1', 1)" onmouseover="showTip(event, '1', 1)">
-            calc op u1 u2
+            calc op cu1 cu2
           </code>
           <div class="tip" id="1">
-            <strong>Signature:</strong> op:(BigRational -&gt; BigRational -&gt; BigRational) -&gt; u1:CombiUnit -&gt; u2:CombiUnit -&gt; CombiUnit<br />
+            <strong>Signature:</strong> op:(BigRational -&gt; BigRational -&gt; BigRational) -&gt; cu1:CombiUnit -&gt; cu2:CombiUnit -&gt; CombiUnit<br />
                       </div>
         </td>
         <td class="xmldoc">
-            <a href="http://github.com/halcwb/GenUnits/tree/master/src/Informedica.GenUnits.lib/Unit.fs#L367-367" class="github-link">
+            <a href="http://github.com/halcwb/GenUnits/tree/master/src/Informedica.GenUnits.lib/Unit.fs#L376-376" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -113,10 +113,10 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '3', 3)" onmouseover="showTip(event, '3', 3)">
-            eval x
+            eqGroup cu1 cu2
           </code>
           <div class="tip" id="3">
-            <strong>Signature:</strong> x:CombiUnit -&gt; CombiUnit<br />
+            <strong>Signature:</strong> cu1:CombiUnit -&gt; cu2:CombiUnit -&gt; bool<br />
                       </div>
         </td>
         <td class="xmldoc">
@@ -131,9 +131,27 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '4', 4)" onmouseover="showTip(event, '4', 4)">
-            get arg1
+            eval x
           </code>
           <div class="tip" id="4">
+            <strong>Signature:</strong> x:CombiUnit -&gt; CombiUnit<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/halcwb/GenUnits/tree/master/src/Informedica.GenUnits.lib/Unit.fs#L317-317" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '5', 5)" onmouseover="showTip(event, '5', 5)">
+            get arg1
+          </code>
+          <div class="tip" id="5">
             <strong>Signature:</strong> CombiUnit -&gt; BigRational * Unit * (Operator * BigRational * Unit) list<br />
                       </div>
         </td>
@@ -148,10 +166,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '5', 5)" onmouseover="showTip(event, '5', 5)">
+          <code onmouseout="hideTip(event, '6', 6)" onmouseover="showTip(event, '6', 6)">
             getMultiplier vu
           </code>
-          <div class="tip" id="5">
+          <div class="tip" id="6">
             <strong>Signature:</strong> vu:CombiUnit -&gt; BigRational<br />
                       </div>
         </td>
@@ -166,10 +184,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '6', 6)" onmouseover="showTip(event, '6', 6)">
+          <code onmouseout="hideTip(event, '7', 7)" onmouseover="showTip(event, '7', 7)">
             operator op v u vu
           </code>
-          <div class="tip" id="6">
+          <div class="tip" id="7">
             <strong>Signature:</strong> op:Operator -&gt; v:BigRational -&gt; u:Unit -&gt; vu:CombiUnit -&gt; CombiUnit<br />
                       </div>
         </td>
@@ -184,10 +202,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '7', 7)" onmouseover="showTip(event, '7', 7)">
+          <code onmouseout="hideTip(event, '8', 8)" onmouseover="showTip(event, '8', 8)">
             per 
           </code>
-          <div class="tip" id="7">
+          <div class="tip" id="8">
             <strong>Signature:</strong> BigRational -&gt; Unit -&gt; CombiUnit -&gt; CombiUnit<br />
                       </div>
         </td>
@@ -202,10 +220,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '8', 8)" onmouseover="showTip(event, '8', 8)">
+          <code onmouseout="hideTip(event, '9', 9)" onmouseover="showTip(event, '9', 9)">
             times 
           </code>
-          <div class="tip" id="8">
+          <div class="tip" id="9">
             <strong>Signature:</strong> BigRational -&gt; Unit -&gt; CombiUnit -&gt; CombiUnit<br />
                       </div>
         </td>
@@ -220,10 +238,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '9', 9)" onmouseover="showTip(event, '9', 9)">
+          <code onmouseout="hideTip(event, '10', 10)" onmouseover="showTip(event, '10', 10)">
             toBase u v
           </code>
-          <div class="tip" id="9">
+          <div class="tip" id="10">
             <strong>Signature:</strong> u:CombiUnit -&gt; v:BigRational -&gt; BigRational<br />
                       </div>
         </td>
@@ -238,15 +256,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '10', 10)" onmouseover="showTip(event, '10', 10)">
+          <code onmouseout="hideTip(event, '11', 11)" onmouseover="showTip(event, '11', 11)">
             toString cu
           </code>
-          <div class="tip" id="10">
+          <div class="tip" id="11">
             <strong>Signature:</strong> cu:CombiUnit -&gt; string<br />
                       </div>
         </td>
         <td class="xmldoc">
-            <a href="http://github.com/halcwb/GenUnits/tree/master/src/Informedica.GenUnits.lib/Unit.fs#L378-378" class="github-link">
+            <a href="http://github.com/halcwb/GenUnits/tree/master/src/Informedica.GenUnits.lib/Unit.fs#L392-392" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -256,10 +274,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '11', 11)" onmouseover="showTip(event, '11', 11)">
+          <code onmouseout="hideTip(event, '12', 12)" onmouseover="showTip(event, '12', 12)">
             toUnit u v
           </code>
-          <div class="tip" id="11">
+          <div class="tip" id="12">
             <strong>Signature:</strong> u:CombiUnit -&gt; v:BigRational -&gt; BigRational<br />
                       </div>
         </td>
@@ -274,10 +292,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '12', 12)" onmouseover="showTip(event, '12', 12)">
+          <code onmouseout="hideTip(event, '13', 13)" onmouseover="showTip(event, '13', 13)">
             withUnit u v
           </code>
-          <div class="tip" id="12">
+          <div class="tip" id="13">
             <strong>Signature:</strong> u:Unit -&gt; v:BigRational -&gt; CombiUnit<br />
                       </div>
         </td>
@@ -300,20 +318,20 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '13', 13)" onmouseover="showTip(event, '13', 13)">
-            ( |Mult|Div| ) op
+          <code onmouseout="hideTip(event, '14', 14)" onmouseover="showTip(event, '14', 14)">
+            ( |Mult|Div|Add|Subtr| ) op
           </code>
-          <div class="tip" id="13">
-            <strong>Signature:</strong> op:(BigRational -&gt; BigRational -&gt; BigRational) -&gt; Choice&lt;unit,unit&gt;<br />
+          <div class="tip" id="14">
+            <strong>Signature:</strong> op:(BigRational -&gt; BigRational -&gt; BigRational) -&gt; Choice&lt;unit,unit,unit,unit&gt;<br />
                       </div>
         </td>
         <td class="xmldoc">
-            <a href="http://github.com/halcwb/GenUnits/tree/master/src/Informedica.GenUnits.lib/Unit.fs#L361-361" class="github-link">
+            <a href="http://github.com/halcwb/GenUnits/tree/master/src/Informedica.GenUnits.lib/Unit.fs#L368-368" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
           
-              <p>CompiledName: <code>|Mult|Div|</code></p>
+              <p>CompiledName: <code>|Mult|Div|Add|Subtr|</code></p>
         </td>
       </tr>
     </tbody>
