@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <title>tutorial</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content=""/>
+    <meta name="description" content="Basic units of measure library enabling calculating with values that have units"/>
     <meta name="author" content="halcwb"/>
 
     <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
@@ -93,6 +93,24 @@ val it : string = "2 X/day"</p>
 <blockquote>
 <p>val it : string = "7 g/week"</p>
 </blockquote>
+<h2><a name="Create-a-combi-unit-directly-from-a-string" class="anchor" href="#Create-a-combi-unit-directly-from-a-string">Create a combi unit directly from a string</a></h2>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="s">&quot;mg/kg/2 day&quot;</span> <span class="o">|&gt;</span> <span class="t">CU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs22', 39)" onmouseover="showTip(event, 'fs22', 39)" class="f">fromString</span>
+</code></pre></td>
+</tr>
+</table>
+<p>And a value with a unit</p>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
+<span class="l">2: </span>
+<span class="l">3: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="s">&quot;20 mg/kg/2 day&quot;</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs23', 40)" onmouseover="showTip(event, 'fs23', 40)" class="f">fromString</span>
+<span onmouseout="hideTip(event, 'fs17', 41)" onmouseover="showTip(event, 'fs17', 41)" class="i">tot</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs21', 42)" onmouseover="showTip(event, 'fs21', 42)" class="f">convertTo</span> <span onmouseout="hideTip(event, 'fs18', 43)" onmouseover="showTip(event, 'fs18', 43)" class="i">``gram/week``</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs16', 44)" onmouseover="showTip(event, 'fs16', 44)" class="f">toString</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs23', 45)" onmouseover="showTip(event, 'fs23', 45)" class="f">fromString</span>
+<span onmouseout="hideTip(event, 'fs12', 46)" onmouseover="showTip(event, 'fs12', 46)" class="i">``2 dd``</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs16', 47)" onmouseover="showTip(event, 'fs16', 47)" class="f">toString</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs23', 48)" onmouseover="showTip(event, 'fs23', 48)" class="f">fromString</span>
+</code></pre></td>
+</tr>
+</table>
 
 <div class="tip" id="fs1">namespace Informedica</div>
 <div class="tip" id="fs2">namespace Informedica.GenUnits</div>
@@ -115,6 +133,8 @@ val it : string = "2 X/day"</p>
 <div class="tip" id="fs19">val gram : Unit.Unit<br /><br />Full name: Informedica.GenUnits.Lib.UnitModule.Units.gram</div>
 <div class="tip" id="fs20">val week : Unit.Unit<br /><br />Full name: Informedica.GenUnits.Lib.UnitModule.Units.week</div>
 <div class="tip" id="fs21">val convertTo : cu:CombiUnit.CombiUnit -&gt; vu:ValueUnit.ValueUnit -&gt; ValueUnit.ValueUnit<br /><br />Full name: Informedica.GenUnits.Lib.ValueUnitModule.convertTo</div>
+<div class="tip" id="fs22">val fromString : s:string -&gt; CombiUnit.CombiUnit<br /><br />Full name: Informedica.GenUnits.Lib.CombiUnitModule.fromString</div>
+<div class="tip" id="fs23">val fromString : s:string -&gt; ValueUnit.ValueUnit<br /><br />Full name: Informedica.GenUnits.Lib.ValueUnitModule.fromString</div>
 
         </div>
         <div class="span3">
