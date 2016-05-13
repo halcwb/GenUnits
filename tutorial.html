@@ -111,6 +111,27 @@ val it : string = "2 X/day"</p>
 </code></pre></td>
 </tr>
 </table>
+<h2><a name="Evaluate-an-expression" class="anchor" href="#Evaluate-an-expression">Evaluate an expression</a></h2>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
+<span class="l">2: </span>
+<span class="l">3: </span>
+<span class="l">4: </span>
+<span class="l">5: </span>
+<span class="l">6: </span>
+<span class="l">7: </span>
+<span class="l">8: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="s">&quot;2 mg * 3 X/day&quot;</span> <span class="o">|&gt;</span> <span onmouseout="hideTip(event, 'fs24', 49)" onmouseover="showTip(event, 'fs24', 49)" class="t">Api</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs25', 50)" onmouseover="showTip(event, 'fs25', 50)" class="f">eval</span>
+
+<span class="k">let</span> <span onmouseout="hideTip(event, 'fs26', 51)" onmouseover="showTip(event, 'fs26', 51)" class="i">conc</span> <span class="o">=</span> <span class="s">&quot;200 mg / 50 ml&quot;</span> <span class="o">|&gt;</span> <span onmouseout="hideTip(event, 'fs24', 52)" onmouseover="showTip(event, 'fs24', 52)" class="t">Api</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs25', 53)" onmouseover="showTip(event, 'fs25', 53)" class="f">eval</span>
+<span class="k">let</span> <span onmouseout="hideTip(event, 'fs27', 54)" onmouseover="showTip(event, 'fs27', 54)" class="i">rate</span> <span class="o">=</span> <span class="s">&quot;2 mL/hour&quot;</span>      <span class="o">|&gt;</span> <span onmouseout="hideTip(event, 'fs24', 55)" onmouseover="showTip(event, 'fs24', 55)" class="t">Api</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs25', 56)" onmouseover="showTip(event, 'fs25', 56)" class="f">eval</span>
+<span class="k">let</span> <span onmouseout="hideTip(event, 'fs28', 57)" onmouseover="showTip(event, 'fs28', 57)" class="i">dose</span> <span class="o">=</span> 
+    <span onmouseout="hideTip(event, 'fs27', 58)" onmouseover="showTip(event, 'fs27', 58)" class="i">rate</span> <span class="o">+</span> <span class="s">&quot; * &quot;</span> <span class="o">+</span> <span onmouseout="hideTip(event, 'fs26', 59)" onmouseover="showTip(event, 'fs26', 59)" class="i">conc</span> <span class="o">+</span> <span class="s">&quot; / 60 kg_weight&quot;</span> 
+    <span class="o">|&gt;</span> <span onmouseout="hideTip(event, 'fs24', 60)" onmouseover="showTip(event, 'fs24', 60)" class="t">Api</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs25', 61)" onmouseover="showTip(event, 'fs25', 61)" class="f">eval</span>
+    <span class="o">|&gt;</span> <span onmouseout="hideTip(event, 'fs24', 62)" onmouseover="showTip(event, 'fs24', 62)" class="t">Api</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs29', 63)" onmouseover="showTip(event, 'fs29', 63)" class="f">convert</span> <span class="s">&quot;mcg/kg_weight/min&quot;</span>
+</code></pre></td>
+</tr>
+</table>
 
 <div class="tip" id="fs1">namespace Informedica</div>
 <div class="tip" id="fs2">namespace Informedica.GenUnits</div>
@@ -135,6 +156,12 @@ val it : string = "2 X/day"</p>
 <div class="tip" id="fs21">val convertTo : cu:CombiUnit.CombiUnit -&gt; vu:ValueUnit.ValueUnit -&gt; ValueUnit.ValueUnit<br /><br />Full name: Informedica.GenUnits.Lib.ValueUnitModule.convertTo</div>
 <div class="tip" id="fs22">val fromString : s:string -&gt; CombiUnit.CombiUnit<br /><br />Full name: Informedica.GenUnits.Lib.CombiUnitModule.fromString</div>
 <div class="tip" id="fs23">val fromString : s:string -&gt; ValueUnit.ValueUnit<br /><br />Full name: Informedica.GenUnits.Lib.ValueUnitModule.fromString</div>
+<div class="tip" id="fs24">module Api<br /><br />from Informedica.GenUnits.Lib</div>
+<div class="tip" id="fs25">val eval : s:string -&gt; string<br /><br />Full name: Informedica.GenUnits.Lib.Api.eval</div>
+<div class="tip" id="fs26">val conc : string<br /><br />Full name: Tutorial.conc</div>
+<div class="tip" id="fs27">val rate : string<br /><br />Full name: Tutorial.rate</div>
+<div class="tip" id="fs28">val dose : string<br /><br />Full name: Tutorial.dose</div>
+<div class="tip" id="fs29">val convert : s2:string -&gt; s1:string -&gt; string<br /><br />Full name: Informedica.GenUnits.Lib.Api.convert</div>
 
         </div>
         <div class="span3">
