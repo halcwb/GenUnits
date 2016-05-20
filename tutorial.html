@@ -43,15 +43,15 @@
 <span class="l">8: </span>
 <span class="l">9: </span>
 </pre></td>
-<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="k">open</span> <span onmouseout="hideTip(event, 'fs1', 1)" onmouseover="showTip(event, 'fs1', 1)" class="i">Informedica</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs2', 2)" onmouseover="showTip(event, 'fs2', 2)" class="i">GenUnits</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs3', 3)" onmouseover="showTip(event, 'fs3', 3)" class="i">Lib</span>
-<span class="k">open</span> <span onmouseout="hideTip(event, 'fs1', 4)" onmouseover="showTip(event, 'fs1', 4)" class="i">Informedica</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs2', 5)" onmouseover="showTip(event, 'fs2', 5)" class="i">GenUnits</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs3', 6)" onmouseover="showTip(event, 'fs3', 6)" class="i">Lib</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs4', 7)" onmouseover="showTip(event, 'fs4', 7)" class="i">Unit</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs5', 8)" onmouseover="showTip(event, 'fs5', 8)" class="i">Units</span>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="k">open</span> <span onmouseout="hideTip(event, 'fs1', 13)" onmouseover="showTip(event, 'fs1', 13)" class="i">Informedica</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs5', 14)" onmouseover="showTip(event, 'fs5', 14)" class="i">GenUnits</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs6', 15)" onmouseover="showTip(event, 'fs6', 15)" class="i">Lib</span>
+<span class="k">open</span> <span onmouseout="hideTip(event, 'fs1', 16)" onmouseover="showTip(event, 'fs1', 16)" class="i">Informedica</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs5', 17)" onmouseover="showTip(event, 'fs5', 17)" class="i">GenUnits</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs6', 18)" onmouseover="showTip(event, 'fs6', 18)" class="i">Lib</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs11', 19)" onmouseover="showTip(event, 'fs11', 19)" class="i">Unit</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs12', 20)" onmouseover="showTip(event, 'fs12', 20)" class="i">Units</span>
 
-<span class="k">module</span> <span class="t">CU</span> <span class="o">=</span> <span onmouseout="hideTip(event, 'fs6', 9)" onmouseover="showTip(event, 'fs6', 9)" class="i">CombiUnit</span>
-<span class="k">module</span> <span class="t">VU</span> <span class="o">=</span> <span onmouseout="hideTip(event, 'fs7', 10)" onmouseover="showTip(event, 'fs7', 10)" class="i">ValueUnit</span>
-<span class="k">module</span> <span class="t">UG</span> <span class="o">=</span> <span onmouseout="hideTip(event, 'fs8', 11)" onmouseover="showTip(event, 'fs8', 11)" class="i">UnitGroup</span>
+<span class="k">module</span> <span class="t">CU</span> <span class="o">=</span> <span onmouseout="hideTip(event, 'fs13', 21)" onmouseover="showTip(event, 'fs13', 21)" class="i">CombiUnit</span>
+<span class="k">module</span> <span class="t">VU</span> <span class="o">=</span> <span onmouseout="hideTip(event, 'fs14', 22)" onmouseover="showTip(event, 'fs14', 22)" class="i">ValueUnit</span>
+<span class="k">module</span> <span class="t">UG</span> <span class="o">=</span> <span onmouseout="hideTip(event, 'fs15', 23)" onmouseover="showTip(event, 'fs15', 23)" class="i">UnitGroup</span>
 
-<span class="k">let</span> <span onmouseout="hideTip(event, 'fs9', 12)" onmouseover="showTip(event, 'fs9', 12)" class="i">``500 mg``</span> <span class="o">=</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs10', 13)" onmouseover="showTip(event, 'fs10', 13)" class="f">create</span> <span class="n">500N</span> (<span class="n">1N</span> <span class="o">|&gt;</span> <span class="t">CU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs11', 14)" onmouseover="showTip(event, 'fs11', 14)" class="f">withUnit</span> <span onmouseout="hideTip(event, 'fs12', 15)" onmouseover="showTip(event, 'fs12', 15)" class="i">milliGram</span>)
-<span class="k">let</span> <span onmouseout="hideTip(event, 'fs13', 16)" onmouseover="showTip(event, 'fs13', 16)" class="i">``2 dd``</span>   <span class="o">=</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs10', 17)" onmouseover="showTip(event, 'fs10', 17)" class="f">create</span> <span class="n">2N</span>  (<span class="n">1N</span>  <span class="o">|&gt;</span> <span class="t">CU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs11', 18)" onmouseover="showTip(event, 'fs11', 18)" class="f">withUnit</span> <span onmouseout="hideTip(event, 'fs14', 19)" onmouseover="showTip(event, 'fs14', 19)" class="i">count</span> <span class="o">|&gt;</span> <span class="t">CU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs15', 20)" onmouseover="showTip(event, 'fs15', 20)" class="f">per</span> <span class="n">1N</span> <span onmouseout="hideTip(event, 'fs16', 21)" onmouseover="showTip(event, 'fs16', 21)" class="i">day</span>)
+<span class="k">let</span> <span onmouseout="hideTip(event, 'fs16', 24)" onmouseover="showTip(event, 'fs16', 24)" class="i">``500 mg``</span> <span class="o">=</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs17', 25)" onmouseover="showTip(event, 'fs17', 25)" class="f">create</span> <span class="n">500N</span> (<span class="n">1N</span> <span class="o">|&gt;</span> <span class="t">CU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs18', 26)" onmouseover="showTip(event, 'fs18', 26)" class="f">withUnit</span> <span onmouseout="hideTip(event, 'fs19', 27)" onmouseover="showTip(event, 'fs19', 27)" class="i">milliGram</span>)
+<span class="k">let</span> <span onmouseout="hideTip(event, 'fs20', 28)" onmouseover="showTip(event, 'fs20', 28)" class="i">``2 dd``</span>   <span class="o">=</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs17', 29)" onmouseover="showTip(event, 'fs17', 29)" class="f">create</span> <span class="n">2N</span>  (<span class="n">1N</span>  <span class="o">|&gt;</span> <span class="t">CU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs18', 30)" onmouseover="showTip(event, 'fs18', 30)" class="f">withUnit</span> <span onmouseout="hideTip(event, 'fs21', 31)" onmouseover="showTip(event, 'fs21', 31)" class="i">count</span> <span class="o">|&gt;</span> <span class="t">CU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs22', 32)" onmouseover="showTip(event, 'fs22', 32)" class="f">per</span> <span class="n">1N</span> <span onmouseout="hideTip(event, 'fs23', 33)" onmouseover="showTip(event, 'fs23', 33)" class="i">day</span>)
 </code></pre></td>
 </tr>
 </table>
@@ -59,46 +59,105 @@
 <table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
 <span class="l">2: </span>
 </pre></td>
-<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span onmouseout="hideTip(event, 'fs9', 22)" onmouseover="showTip(event, 'fs9', 22)" class="i">``500 mg``</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs17', 23)" onmouseover="showTip(event, 'fs17', 23)" class="f">toString</span>
-<span onmouseout="hideTip(event, 'fs13', 24)" onmouseover="showTip(event, 'fs13', 24)" class="i">``2 dd``</span>   <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs17', 25)" onmouseover="showTip(event, 'fs17', 25)" class="f">toString</span>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span onmouseout="hideTip(event, 'fs16', 34)" onmouseover="showTip(event, 'fs16', 34)" class="i">``500 mg``</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs24', 35)" onmouseover="showTip(event, 'fs24', 35)" class="f">toString</span>
+<span onmouseout="hideTip(event, 'fs20', 36)" onmouseover="showTip(event, 'fs20', 36)" class="i">``2 dd``</span>   <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs24', 37)" onmouseover="showTip(event, 'fs24', 37)" class="f">toString</span>
+</code></pre></td>
+</tr>
+</table>
+<ul>
+<li>hide *</li>
+</ul>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
+<span class="l">2: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span onmouseout="hideTip(event, 'fs16', 38)" onmouseover="showTip(event, 'fs16', 38)" class="i">``500 mg``</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs24', 39)" onmouseover="showTip(event, 'fs24', 39)" class="f">toString</span> <span class="o">|&gt;</span> <span onmouseout="hideTip(event, 'fs8', 40)" onmouseover="showTip(event, 'fs8', 40)" class="f">print</span>
+<span onmouseout="hideTip(event, 'fs20', 41)" onmouseover="showTip(event, 'fs20', 41)" class="i">``2 dd``</span>   <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs24', 42)" onmouseover="showTip(event, 'fs24', 42)" class="f">toString</span> <span class="o">|&gt;</span> <span onmouseout="hideTip(event, 'fs8', 43)" onmouseover="showTip(event, 'fs8', 43)" class="f">print</span>
 </code></pre></td>
 </tr>
 </table>
 <p>Output:</p>
 <blockquote>
-<p>val it : string = "500 mg(Mass)"
-val it : string = "2 X(Count)/day(Time)"</p>
+<p>500 mg[Mass] </br>
+2 X[Count]/day[Time]</p>
 </blockquote>
 <p>Perform a calculation: 2 X/day * 500 mg = 1000 mg/day</p>
 <table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
 <span class="l">2: </span>
 </pre></td>
-<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="k">let</span> <span onmouseout="hideTip(event, 'fs18', 26)" onmouseover="showTip(event, 'fs18', 26)" class="i">tot</span> <span class="o">=</span> <span onmouseout="hideTip(event, 'fs13', 27)" onmouseover="showTip(event, 'fs13', 27)" class="i">``2 dd``</span> <span class="o">*</span> <span onmouseout="hideTip(event, 'fs9', 28)" onmouseover="showTip(event, 'fs9', 28)" class="i">``500 mg``</span> 
-<span onmouseout="hideTip(event, 'fs18', 29)" onmouseover="showTip(event, 'fs18', 29)" class="i">tot</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs17', 30)" onmouseover="showTip(event, 'fs17', 30)" class="f">toString</span>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="k">let</span> <span onmouseout="hideTip(event, 'fs25', 44)" onmouseover="showTip(event, 'fs25', 44)" class="i">tot</span> <span class="o">=</span> <span onmouseout="hideTip(event, 'fs20', 45)" onmouseover="showTip(event, 'fs20', 45)" class="i">``2 dd``</span> <span class="o">*</span> <span onmouseout="hideTip(event, 'fs16', 46)" onmouseover="showTip(event, 'fs16', 46)" class="i">``500 mg``</span> 
+<span onmouseout="hideTip(event, 'fs25', 47)" onmouseover="showTip(event, 'fs25', 47)" class="i">tot</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs24', 48)" onmouseover="showTip(event, 'fs24', 48)" class="f">toString</span>
+</code></pre></td>
+</tr>
+</table>
+<ul>
+<li>hide *</li>
+</ul>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span onmouseout="hideTip(event, 'fs25', 49)" onmouseover="showTip(event, 'fs25', 49)" class="i">tot</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs24', 50)" onmouseover="showTip(event, 'fs24', 50)" class="f">toString</span> <span class="o">|&gt;</span> <span onmouseout="hideTip(event, 'fs8', 51)" onmouseover="showTip(event, 'fs8', 51)" class="f">print</span>
 </code></pre></td>
 </tr>
 </table>
 <p>Output:</p>
 <blockquote>
-<p>val it : string = "1000 mg(Mass)/day(Time)"</p>
+<p>1000 mg[Mass]/day[Time] </br></p>
 </blockquote>
 <p>Convert 1000 mg/day to g/week</p>
 <table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
 <span class="l">2: </span>
 </pre></td>
-<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="k">let</span> <span onmouseout="hideTip(event, 'fs19', 31)" onmouseover="showTip(event, 'fs19', 31)" class="i">``gram/week``</span> <span class="o">=</span> <span class="n">1N</span> <span class="o">|&gt;</span> <span class="t">CU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs11', 32)" onmouseover="showTip(event, 'fs11', 32)" class="f">withUnit</span> <span onmouseout="hideTip(event, 'fs20', 33)" onmouseover="showTip(event, 'fs20', 33)" class="i">gram</span> <span class="o">|&gt;</span> <span class="t">CU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs15', 34)" onmouseover="showTip(event, 'fs15', 34)" class="f">per</span> <span class="n">1N</span> <span onmouseout="hideTip(event, 'fs21', 35)" onmouseover="showTip(event, 'fs21', 35)" class="i">week</span>
-<span onmouseout="hideTip(event, 'fs18', 36)" onmouseover="showTip(event, 'fs18', 36)" class="i">tot</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs22', 37)" onmouseover="showTip(event, 'fs22', 37)" class="f">convertTo</span> <span onmouseout="hideTip(event, 'fs19', 38)" onmouseover="showTip(event, 'fs19', 38)" class="i">``gram/week``</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs17', 39)" onmouseover="showTip(event, 'fs17', 39)" class="f">toString</span>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="k">let</span> <span onmouseout="hideTip(event, 'fs26', 52)" onmouseover="showTip(event, 'fs26', 52)" class="i">``gram/week``</span> <span class="o">=</span> <span class="n">1N</span> <span class="o">|&gt;</span> <span class="t">CU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs18', 53)" onmouseover="showTip(event, 'fs18', 53)" class="f">withUnit</span> <span onmouseout="hideTip(event, 'fs27', 54)" onmouseover="showTip(event, 'fs27', 54)" class="i">gram</span> <span class="o">|&gt;</span> <span class="t">CU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs22', 55)" onmouseover="showTip(event, 'fs22', 55)" class="f">per</span> <span class="n">1N</span> <span onmouseout="hideTip(event, 'fs28', 56)" onmouseover="showTip(event, 'fs28', 56)" class="i">week</span>
+<span onmouseout="hideTip(event, 'fs25', 57)" onmouseover="showTip(event, 'fs25', 57)" class="i">tot</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs29', 58)" onmouseover="showTip(event, 'fs29', 58)" class="f">convertTo</span> <span onmouseout="hideTip(event, 'fs26', 59)" onmouseover="showTip(event, 'fs26', 59)" class="i">``gram/week``</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs24', 60)" onmouseover="showTip(event, 'fs24', 60)" class="f">toString</span>
+</code></pre></td>
+</tr>
+</table>
+<ul>
+<li>hide *</li>
+</ul>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span onmouseout="hideTip(event, 'fs25', 61)" onmouseover="showTip(event, 'fs25', 61)" class="i">tot</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs29', 62)" onmouseover="showTip(event, 'fs29', 62)" class="f">convertTo</span> <span onmouseout="hideTip(event, 'fs26', 63)" onmouseover="showTip(event, 'fs26', 63)" class="i">``gram/week``</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs24', 64)" onmouseover="showTip(event, 'fs24', 64)" class="f">toString</span> <span class="o">|&gt;</span> <span onmouseout="hideTip(event, 'fs8', 65)" onmouseover="showTip(event, 'fs8', 65)" class="f">print</span>
 </code></pre></td>
 </tr>
 </table>
 <p>Output:</p>
 <blockquote>
-<p>val it : string = "7 g(Mass)/week(Time)"</p>
+<p>7 g[Mass]/week[Time]</p>
 </blockquote>
 <h2><a name="Create-a-combi-unit-directly-from-a-string" class="anchor" href="#Create-a-combi-unit-directly-from-a-string">Create a combi unit directly from a string</a></h2>
 <table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
 </pre></td>
-<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="s">&quot;mg(Mass)/kg(Weight)/2 day(Time)&quot;</span> <span class="o">|&gt;</span> <span class="t">CU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs23', 40)" onmouseover="showTip(event, 'fs23', 40)" class="f">fromString</span>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="s">&quot;mg[Mass]/kg[Weight]/2 day[Time]&quot;</span> <span class="o">|&gt;</span> <span class="t">CU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs30', 66)" onmouseover="showTip(event, 'fs30', 66)" class="f">fromString</span>
+</code></pre></td>
+</tr>
+</table>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l"> 1: </span>
+<span class="l"> 2: </span>
+<span class="l"> 3: </span>
+<span class="l"> 4: </span>
+<span class="l"> 5: </span>
+<span class="l"> 6: </span>
+<span class="l"> 7: </span>
+<span class="l"> 8: </span>
+<span class="l"> 9: </span>
+<span class="l">10: </span>
+<span class="l">11: </span>
+<span class="l">12: </span>
+<span class="l">13: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="i">Combi</span>
+(<span class="n">1N</span>,{<span class="i">Group</span> <span class="o">=</span> <span class="i">Name</span> <span class="s">&quot;Mass&quot;</span>; 
+        <span class="i">Name</span> <span class="o">=</span> (<span class="i">Name</span> <span class="s">&quot;MilliGram&quot;</span>, []); 
+        <span class="i">Abbreviation</span> <span class="o">=</span> (<span class="i">Name</span> <span class="s">&quot;mg&quot;</span>, []); 
+        <span class="i">Multiplier</span> <span class="o">=</span> <span class="n">1</span><span class="o">/</span><span class="n">1000N</span>;}, 
+    [(<span class="i">Per</span>, <span class="n">1N</span>, {<span class="i">Group</span> <span class="o">=</span> <span class="i">Name</span> <span class="s">&quot;Kg&quot;</span>; 
+                <span class="i">Name</span> <span class="o">=</span> (<span class="i">Name</span> <span class="s">&quot;kg&quot;</span>, []); 
+                <span class="i">Abbreviation</span> <span class="o">=</span> (<span class="i">Name</span> <span class="s">&quot;kg&quot;</span>, []); 
+                <span class="i">Multiplier</span> <span class="o">=</span> <span class="n">1N</span>;}); 
+    (<span class="i">Per</span>, <span class="n">2N</span>, {<span class="i">Group</span> <span class="o">=</span> <span class="i">Name</span> <span class="s">&quot;Time&quot;</span>; 
+                <span class="i">Name</span> <span class="o">=</span> (<span class="i">Name</span> <span class="s">&quot;Day&quot;</span>, []); 
+                <span class="i">Abbreviation</span> <span class="o">=</span> (<span class="i">Name</span> <span class="s">&quot;day&quot;</span>, []); 
+                <span class="i">Multiplier</span> <span class="o">=</span> <span class="n">86400N</span>;})])
 </code></pre></td>
 </tr>
 </table>
@@ -107,13 +166,12 @@ val it : string = "2 X(Count)/day(Time)"</p>
 <span class="l">2: </span>
 <span class="l">3: </span>
 </pre></td>
-<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="s">&quot;20 mg(Mass)/kg(Weight)/2 day(Time)&quot;</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs24', 41)" onmouseover="showTip(event, 'fs24', 41)" class="f">fromString</span>
-<span onmouseout="hideTip(event, 'fs18', 42)" onmouseover="showTip(event, 'fs18', 42)" class="i">tot</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs22', 43)" onmouseover="showTip(event, 'fs22', 43)" class="f">convertTo</span> <span onmouseout="hideTip(event, 'fs19', 44)" onmouseover="showTip(event, 'fs19', 44)" class="i">``gram/week``</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs17', 45)" onmouseover="showTip(event, 'fs17', 45)" class="f">toString</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs24', 46)" onmouseover="showTip(event, 'fs24', 46)" class="f">fromString</span>
-<span onmouseout="hideTip(event, 'fs13', 47)" onmouseover="showTip(event, 'fs13', 47)" class="i">``2 dd``</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs17', 48)" onmouseover="showTip(event, 'fs17', 48)" class="f">toString</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs24', 49)" onmouseover="showTip(event, 'fs24', 49)" class="f">fromString</span>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="s">&quot;20 mg[Mass]/kg[Weight]/2 day[Time]&quot;</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs31', 67)" onmouseover="showTip(event, 'fs31', 67)" class="f">fromString</span>
+<span onmouseout="hideTip(event, 'fs25', 68)" onmouseover="showTip(event, 'fs25', 68)" class="i">tot</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs29', 69)" onmouseover="showTip(event, 'fs29', 69)" class="f">convertTo</span> <span onmouseout="hideTip(event, 'fs26', 70)" onmouseover="showTip(event, 'fs26', 70)" class="i">``gram/week``</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs24', 71)" onmouseover="showTip(event, 'fs24', 71)" class="f">toString</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs31', 72)" onmouseover="showTip(event, 'fs31', 72)" class="f">fromString</span>
+<span onmouseout="hideTip(event, 'fs20', 73)" onmouseover="showTip(event, 'fs20', 73)" class="i">``2 dd``</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs24', 74)" onmouseover="showTip(event, 'fs24', 74)" class="f">toString</span> <span class="o">|&gt;</span> <span class="t">VU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs31', 75)" onmouseover="showTip(event, 'fs31', 75)" class="f">fromString</span>
 </code></pre></td>
 </tr>
 </table>
-<h2><a name="Evaluate-an-expression" class="anchor" href="#Evaluate-an-expression">Evaluate an expression</a></h2>
 <table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
 <span class="l">2: </span>
 <span class="l">3: </span>
@@ -122,23 +180,50 @@ val it : string = "2 X(Count)/day(Time)"</p>
 <span class="l">6: </span>
 <span class="l">7: </span>
 <span class="l">8: </span>
+<span class="l">9: </span>
 </pre></td>
-<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="s">&quot;2 mg(Mass) * 3 X(Count)/day(Time)&quot;</span> <span class="o">|&gt;</span> <span onmouseout="hideTip(event, 'fs25', 50)" onmouseover="showTip(event, 'fs25', 50)" class="t">Api</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs26', 51)" onmouseover="showTip(event, 'fs26', 51)" class="f">eval</span>
-
-<span class="k">let</span> <span onmouseout="hideTip(event, 'fs27', 52)" onmouseover="showTip(event, 'fs27', 52)" class="i">conc</span> <span class="o">=</span> <span class="s">&quot;200 mg(Mass) / 50 ml(Volume)&quot;</span> <span class="o">|&gt;</span> <span onmouseout="hideTip(event, 'fs25', 53)" onmouseover="showTip(event, 'fs25', 53)" class="t">Api</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs26', 54)" onmouseover="showTip(event, 'fs26', 54)" class="f">eval</span>
-<span class="k">let</span> <span onmouseout="hideTip(event, 'fs28', 55)" onmouseover="showTip(event, 'fs28', 55)" class="i">rate</span> <span class="o">=</span> <span class="s">&quot;2 mL(Mass)/hour(Time)&quot;</span>      <span class="o">|&gt;</span> <span onmouseout="hideTip(event, 'fs25', 56)" onmouseover="showTip(event, 'fs25', 56)" class="t">Api</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs26', 57)" onmouseover="showTip(event, 'fs26', 57)" class="f">eval</span>
-<span class="k">let</span> <span onmouseout="hideTip(event, 'fs29', 58)" onmouseover="showTip(event, 'fs29', 58)" class="i">dose</span> <span class="o">=</span> 
-    <span onmouseout="hideTip(event, 'fs28', 59)" onmouseover="showTip(event, 'fs28', 59)" class="i">rate</span> <span class="o">+</span> <span class="s">&quot; * &quot;</span> <span class="o">+</span> <span onmouseout="hideTip(event, 'fs27', 60)" onmouseover="showTip(event, 'fs27', 60)" class="i">conc</span> <span class="o">+</span> <span class="s">&quot; / 60 kg(Weight)&quot;</span> 
-    <span class="o">|&gt;</span> <span onmouseout="hideTip(event, 'fs25', 61)" onmouseover="showTip(event, 'fs25', 61)" class="t">Api</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs26', 62)" onmouseover="showTip(event, 'fs26', 62)" class="f">eval</span>
-    <span class="o">|&gt;</span> <span onmouseout="hideTip(event, 'fs25', 63)" onmouseover="showTip(event, 'fs25', 63)" class="t">Api</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs30', 64)" onmouseover="showTip(event, 'fs30', 64)" class="f">convert</span> <span class="s">&quot;mcg(Mass)/kg(Weight)/min(Time)&quot;</span>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="i">ValueUnit</span> 
+(<span class="n">2N</span>, 
+    <span class="i">Combi</span> (<span class="n">1N</span>,{<span class="i">Group</span> <span class="o">=</span> <span class="i">Name</span> <span class="s">&quot;Count&quot;</span>; 
+            <span class="i">Name</span> <span class="o">=</span> (<span class="i">Name</span> <span class="s">&quot;Times&quot;</span>, []);  
+            <span class="i">Abbreviation</span> <span class="o">=</span> (<span class="i">Name</span> <span class="s">&quot;X&quot;</span>, []); 
+            <span class="i">Multiplier</span> <span class="o">=</span> <span class="n">1N</span>;},[(<span class="i">Per</span>, <span class="n">1N</span>, {<span class="i">Group</span> <span class="o">=</span> <span class="i">Name</span> <span class="s">&quot;Time&quot;</span>; 
+                                            <span class="i">Name</span> <span class="o">=</span> (<span class="i">Name</span> <span class="s">&quot;Day&quot;</span>, []); 
+                                            <span class="i">Abbreviation</span> <span class="o">=</span> (<span class="i">Name</span> <span class="s">&quot;day&quot;</span>, []); 
+                                            <span class="i">Multiplier</span> <span class="o">=</span> <span class="n">86400N</span>;})])) 
+</code></pre></td>
+</tr>
+</table>
+<h2><a name="Evaluate-an-expression" class="anchor" href="#Evaluate-an-expression">Evaluate an expression</a></h2>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="s">&quot;2 mg[Mass] * 3 X[Count]/day[Time]&quot;</span> <span class="o">|&gt;</span> <span onmouseout="hideTip(event, 'fs32', 76)" onmouseover="showTip(event, 'fs32', 76)" class="t">Api</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs33', 77)" onmouseover="showTip(event, 'fs33', 77)" class="f">eval</span>
 </code></pre></td>
 </tr>
 </table>
 <blockquote>
-<p>val it : string = "6 mass(Mass)/time(Time)" </br>
-val conc : string = "4 mass(Mass)/volume(Volume)" </br>
-val rate : string = "2 mass(Mass)/time(Time)" </br>
-val dose : string = "2/15 mass(Mass)/weight(Weight)/time(Time)"</p>
+<p>"6 mg[Mass]/day[Time]"</p>
+</blockquote>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
+<span class="l">2: </span>
+<span class="l">3: </span>
+<span class="l">4: </span>
+<span class="l">5: </span>
+<span class="l">6: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="k">let</span> <span onmouseout="hideTip(event, 'fs34', 78)" onmouseover="showTip(event, 'fs34', 78)" class="i">conc</span> <span class="o">=</span> <span class="s">&quot;200 mg[Mass] / 50 ml[Volume]&quot;</span> <span class="o">|&gt;</span> <span onmouseout="hideTip(event, 'fs32', 79)" onmouseover="showTip(event, 'fs32', 79)" class="t">Api</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs33', 80)" onmouseover="showTip(event, 'fs33', 80)" class="f">eval</span>
+<span class="k">let</span> <span onmouseout="hideTip(event, 'fs35', 81)" onmouseover="showTip(event, 'fs35', 81)" class="i">rate</span> <span class="o">=</span> <span class="s">&quot;2 mL[Mass]/hour[Time]&quot;</span>      <span class="o">|&gt;</span> <span onmouseout="hideTip(event, 'fs32', 82)" onmouseover="showTip(event, 'fs32', 82)" class="t">Api</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs33', 83)" onmouseover="showTip(event, 'fs33', 83)" class="f">eval</span>
+<span class="k">let</span> <span onmouseout="hideTip(event, 'fs36', 84)" onmouseover="showTip(event, 'fs36', 84)" class="i">dose</span> <span class="o">=</span> 
+    <span onmouseout="hideTip(event, 'fs35', 85)" onmouseover="showTip(event, 'fs35', 85)" class="i">rate</span> <span class="o">+</span> <span class="s">&quot; * &quot;</span> <span class="o">+</span> <span onmouseout="hideTip(event, 'fs34', 86)" onmouseover="showTip(event, 'fs34', 86)" class="i">conc</span> <span class="o">+</span> <span class="s">&quot; / 60 kg[Weight]&quot;</span> 
+    <span class="o">|&gt;</span> <span onmouseout="hideTip(event, 'fs32', 87)" onmouseover="showTip(event, 'fs32', 87)" class="t">Api</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs33', 88)" onmouseover="showTip(event, 'fs33', 88)" class="f">eval</span>
+    <span class="o">|&gt;</span> <span onmouseout="hideTip(event, 'fs32', 89)" onmouseover="showTip(event, 'fs32', 89)" class="t">Api</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs37', 90)" onmouseover="showTip(event, 'fs37', 90)" class="f">convert</span> <span class="s">&quot;mcg[Mass]/kg[Weight]/min[Time]&quot;</span>
+</code></pre></td>
+</tr>
+</table>
+<blockquote>
+<p>val conc : string = "4 mg[Mass]/ml[Volume]" </br>
+val rate : string = "2 ml[Ml]/hr[Time]" </br>
+val dose : string = "20000/9 mcg[Mass]/kg[Kg]/min[Time]"</p>
 </blockquote>
 <h2><a name="Calculating-with-Unit-Groups" class="anchor" href="#Calculating-with-Unit-Groups">Calculating with Unit Groups</a></h2>
 <p>It is also possible to perform 'unit group calculations'</p>
@@ -149,12 +234,12 @@ val dose : string = "2/15 mass(Mass)/weight(Weight)/time(Time)"</p>
 <span class="l">5: </span>
 <span class="l">6: </span>
 </pre></td>
-<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="k">let</span> <span onmouseout="hideTip(event, 'fs31', 65)" onmouseover="showTip(event, 'fs31', 65)" class="i">ug1</span> <span class="o">=</span> <span class="s">&quot;Mass&quot;</span> <span class="o">|&gt;</span> <span class="t">UG</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs32', 66)" onmouseover="showTip(event, 'fs32', 66)" class="f">fromString</span>
-<span class="k">let</span> <span onmouseout="hideTip(event, 'fs33', 67)" onmouseover="showTip(event, 'fs33', 67)" class="i">ug2</span> <span class="o">=</span> <span class="s">&quot;Weight&quot;</span> <span class="o">|&gt;</span> <span class="t">UG</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs32', 68)" onmouseover="showTip(event, 'fs32', 68)" class="f">fromString</span>
-<span class="k">let</span> <span onmouseout="hideTip(event, 'fs34', 69)" onmouseover="showTip(event, 'fs34', 69)" class="i">ug3</span> <span class="o">=</span> <span class="s">&quot;Time&quot;</span> <span class="o">|&gt;</span> <span class="t">UG</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs32', 70)" onmouseover="showTip(event, 'fs32', 70)" class="f">fromString</span>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="k">let</span> <span onmouseout="hideTip(event, 'fs38', 91)" onmouseover="showTip(event, 'fs38', 91)" class="i">ug1</span> <span class="o">=</span> <span class="s">&quot;Mass&quot;</span> <span class="o">|&gt;</span> <span class="t">UG</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs39', 92)" onmouseover="showTip(event, 'fs39', 92)" class="f">fromString</span>
+<span class="k">let</span> <span onmouseout="hideTip(event, 'fs40', 93)" onmouseover="showTip(event, 'fs40', 93)" class="i">ug2</span> <span class="o">=</span> <span class="s">&quot;Weight&quot;</span> <span class="o">|&gt;</span> <span class="t">UG</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs39', 94)" onmouseover="showTip(event, 'fs39', 94)" class="f">fromString</span>
+<span class="k">let</span> <span onmouseout="hideTip(event, 'fs41', 95)" onmouseover="showTip(event, 'fs41', 95)" class="i">ug3</span> <span class="o">=</span> <span class="s">&quot;Time&quot;</span> <span class="o">|&gt;</span> <span class="t">UG</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs39', 96)" onmouseover="showTip(event, 'fs39', 96)" class="f">fromString</span>
 
-<span class="k">let</span> <span onmouseout="hideTip(event, 'fs35', 71)" onmouseover="showTip(event, 'fs35', 71)" class="i">cg</span> <span class="o">=</span> <span onmouseout="hideTip(event, 'fs31', 72)" onmouseover="showTip(event, 'fs31', 72)" class="i">ug1</span> <span class="o">/</span> <span onmouseout="hideTip(event, 'fs33', 73)" onmouseover="showTip(event, 'fs33', 73)" class="i">ug2</span> <span class="o">/</span> <span onmouseout="hideTip(event, 'fs34', 74)" onmouseover="showTip(event, 'fs34', 74)" class="i">ug3</span>
-<span onmouseout="hideTip(event, 'fs35', 75)" onmouseover="showTip(event, 'fs35', 75)" class="i">cg</span> <span class="o">|&gt;</span> <span class="t">UG</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs36', 76)" onmouseover="showTip(event, 'fs36', 76)" class="f">toString</span>
+<span class="k">let</span> <span onmouseout="hideTip(event, 'fs42', 97)" onmouseover="showTip(event, 'fs42', 97)" class="i">cg</span> <span class="o">=</span> <span onmouseout="hideTip(event, 'fs38', 98)" onmouseover="showTip(event, 'fs38', 98)" class="i">ug1</span> <span class="o">/</span> <span onmouseout="hideTip(event, 'fs40', 99)" onmouseover="showTip(event, 'fs40', 99)" class="i">ug2</span> <span class="o">/</span> <span onmouseout="hideTip(event, 'fs41', 100)" onmouseover="showTip(event, 'fs41', 100)" class="i">ug3</span>
+<span onmouseout="hideTip(event, 'fs42', 101)" onmouseover="showTip(event, 'fs42', 101)" class="i">cg</span> <span class="o">|&gt;</span> <span class="t">UG</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs43', 102)" onmouseover="showTip(event, 'fs43', 102)" class="f">toString</span>
 </code></pre></td>
 </tr>
 </table>
@@ -167,82 +252,94 @@ val dose : string = "2/15 mass(Mass)/weight(Weight)/time(Time)"</p>
 <span class="l">2: </span>
 <span class="l">3: </span>
 </pre></td>
-<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span onmouseout="hideTip(event, 'fs35', 77)" onmouseover="showTip(event, 'fs35', 77)" class="i">cg</span> <span class="o">|&gt;</span> <span class="t">UG</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs37', 78)" onmouseover="showTip(event, 'fs37', 78)" class="f">getUnits</span>
-<span class="o">|&gt;</span> <span onmouseout="hideTip(event, 'fs38', 79)" onmouseover="showTip(event, 'fs38', 79)" class="t">List</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs39', 80)" onmouseover="showTip(event, 'fs39', 80)" class="f">map</span> <span class="t">CU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs40', 81)" onmouseover="showTip(event, 'fs40', 81)" class="f">toString</span>
-<span class="o">|&gt;</span> <span onmouseout="hideTip(event, 'fs38', 82)" onmouseover="showTip(event, 'fs38', 82)" class="t">List</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs41', 83)" onmouseover="showTip(event, 'fs41', 83)" class="f">iter</span> (<span onmouseout="hideTip(event, 'fs42', 84)" onmouseover="showTip(event, 'fs42', 84)" class="f">printfn</span> <span class="s">&quot;&gt; </span><span class="pf">%s</span><span class="s"> &lt;/br&gt;&quot;</span>) 
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span onmouseout="hideTip(event, 'fs42', 103)" onmouseover="showTip(event, 'fs42', 103)" class="i">cg</span> <span class="o">|&gt;</span> <span class="t">UG</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs44', 104)" onmouseover="showTip(event, 'fs44', 104)" class="f">getUnits</span>
+<span class="o">|&gt;</span> <span onmouseout="hideTip(event, 'fs45', 105)" onmouseover="showTip(event, 'fs45', 105)" class="t">List</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs46', 106)" onmouseover="showTip(event, 'fs46', 106)" class="f">map</span> <span class="t">CU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs47', 107)" onmouseover="showTip(event, 'fs47', 107)" class="f">toString</span>
+<span class="o">|&gt;</span> <span onmouseout="hideTip(event, 'fs45', 108)" onmouseover="showTip(event, 'fs45', 108)" class="t">List</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs48', 109)" onmouseover="showTip(event, 'fs48', 109)" class="f">iter</span> (<span onmouseout="hideTip(event, 'fs10', 110)" onmouseover="showTip(event, 'fs10', 110)" class="f">printfn</span> <span class="s">&quot;&gt; </span><span class="pf">%s</span><span class="s"> &lt;/br&gt;&quot;</span>) 
 </code></pre></td>
 </tr>
 </table>
 <p>Results in:</p>
 <blockquote>
-<p>kg(Mass)/kg(Weight)/sec(Time) </br>
-kg(Mass)/kg(Weight)/min(Time) </br>
-kg(Mass)/kg(Weight)/hr(Time) </br>
+<p>kg[Mass]/kg[Weight]/sec[Time] </br>
+kg[Mass]/kg[Weight]/min[Time] </br>
+kg[Mass]/kg[Weight]/hr[Time] </br>
+</br>
 .... </br>
-nanog(Mass)/g(Weight)/hr(Time) </br>
-nanog(Mass)/g(Weight)/day(Time) </br>
-nanog(Mass)/g(Weight)/week(Time) </br>
-nanog(Mass)/g(Weight)/mo(Time) </br>
-nanog(Mass)/g(Weight)/yr(Time)</p>
+</br>
+nanog[Mass]/g[Weight]/week[Time] </br>
+nanog[Mass]/g[Weight]/mo[Time] </br>
+nanog[Mass]/g[Weight]/yr[Time]</p>
 </blockquote>
 <p>When a unit is 'unknown', i.e. not defined in the library, a special unit group is created.</p>
 <table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
 <span class="l">2: </span>
 </pre></td>
 <td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="s">&quot;tablet(Shape)&quot;</span> 
-<span class="o">|&gt;</span> <span class="t">CU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs23', 85)" onmouseover="showTip(event, 'fs23', 85)" class="f">fromString</span>
+<span class="o">|&gt;</span> <span class="t">CU</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs30', 111)" onmouseover="showTip(event, 'fs30', 111)" class="f">fromString</span>
 </code></pre></td>
 </tr>
 </table>
-<blockquote>
-<p>val it : CombiUnit.CombiUnit = Combi (1N,{Group = Name "Shape";
-Name = (Name "tablet", []);
-Abbreviation = (Name "tablet", []);
-Multiplier = 1N;},[])</p>
-</blockquote>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
+<span class="l">2: </span>
+<span class="l">3: </span>
+<span class="l">4: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"> <span class="i">CombiUnit</span><span class="o">.</span><span class="i">CombiUnit</span> <span class="o">=</span> <span class="i">Combi</span> (<span class="n">1N</span>,{<span class="i">Group</span> <span class="o">=</span> <span class="i">Name</span> <span class="s">&quot;Shape&quot;</span>; 
+                                  <span class="i">Name</span> <span class="o">=</span> (<span class="i">Name</span> <span class="s">&quot;tablet&quot;</span>, []); 
+                                  <span class="i">Abbreviation</span> <span class="o">=</span> (<span class="i">Name</span> <span class="s">&quot;tablet&quot;</span>, []); 
+                                  <span class="i">Multiplier</span> <span class="o">=</span> <span class="n">1N</span>;},[]) 
+</code></pre></td>
+</tr>
+</table>
 
 <div class="tip" id="fs1">namespace Informedica</div>
-<div class="tip" id="fs2">namespace Informedica.GenUnits</div>
-<div class="tip" id="fs3">namespace Informedica.GenUnits.Lib</div>
-<div class="tip" id="fs4">module Unit<br /><br />from Informedica.GenUnits.Lib</div>
-<div class="tip" id="fs5">module Units<br /><br />from Informedica.GenUnits.Lib.UnitModule</div>
-<div class="tip" id="fs6">module CombiUnit<br /><br />from Informedica.GenUnits.Lib</div>
-<div class="tip" id="fs7">module ValueUnit<br /><br />from Informedica.GenUnits.Lib</div>
-<div class="tip" id="fs8">module UnitGroup<br /><br />from Informedica.GenUnits.Lib</div>
-<div class="tip" id="fs9">val ( 500 mg ) : ValueUnit.ValueUnit<br /><br />Full name: Tutorial.( 500 mg )</div>
-<div class="tip" id="fs10">val create : v:BigRational -&gt; u:CombiUnit.CombiUnit -&gt; ValueUnit.ValueUnit<br /><br />Full name: Informedica.GenUnits.Lib.ValueUnitModule.create</div>
-<div class="tip" id="fs11">val withUnit : u:Unit.Unit -&gt; v:BigRational -&gt; CombiUnit.CombiUnit<br /><br />Full name: Informedica.GenUnits.Lib.CombiUnitModule.withUnit</div>
-<div class="tip" id="fs12">val milliGram : Unit.Unit<br /><br />Full name: Informedica.GenUnits.Lib.UnitModule.Units.milliGram</div>
-<div class="tip" id="fs13">val ( 2 dd ) : ValueUnit.ValueUnit<br /><br />Full name: Tutorial.( 2 dd )</div>
-<div class="tip" id="fs14">val count : Unit.Unit<br /><br />Full name: Informedica.GenUnits.Lib.UnitModule.Units.count</div>
-<div class="tip" id="fs15">val per : (BigRational -&gt; Unit.Unit -&gt; CombiUnit.CombiUnit -&gt; CombiUnit.CombiUnit)<br /><br />Full name: Informedica.GenUnits.Lib.CombiUnitModule.per</div>
-<div class="tip" id="fs16">val day : Unit.Unit<br /><br />Full name: Informedica.GenUnits.Lib.UnitModule.Units.day</div>
-<div class="tip" id="fs17">val toString : vu:ValueUnit.ValueUnit -&gt; string<br /><br />Full name: Informedica.GenUnits.Lib.ValueUnitModule.toString</div>
-<div class="tip" id="fs18">val tot : ValueUnit.ValueUnit<br /><br />Full name: Tutorial.tot</div>
-<div class="tip" id="fs19">val ( gram/week ) : CombiUnit.CombiUnit<br /><br />Full name: Tutorial.( gram/week )</div>
-<div class="tip" id="fs20">val gram : Unit.Unit<br /><br />Full name: Informedica.GenUnits.Lib.UnitModule.Units.gram</div>
-<div class="tip" id="fs21">val week : Unit.Unit<br /><br />Full name: Informedica.GenUnits.Lib.UnitModule.Units.week</div>
-<div class="tip" id="fs22">val convertTo : cu:CombiUnit.CombiUnit -&gt; vu:ValueUnit.ValueUnit -&gt; ValueUnit.ValueUnit<br /><br />Full name: Informedica.GenUnits.Lib.ValueUnitModule.convertTo</div>
-<div class="tip" id="fs23">val fromString : s:System.String -&gt; CombiUnit.CombiUnit<br /><br />Full name: Informedica.GenUnits.Lib.CombiUnitModule.fromString</div>
-<div class="tip" id="fs24">val fromString : s:string -&gt; ValueUnit.ValueUnit<br /><br />Full name: Informedica.GenUnits.Lib.ValueUnitModule.fromString</div>
-<div class="tip" id="fs25">module Api<br /><br />from Informedica.GenUnits.Lib</div>
-<div class="tip" id="fs26">val eval : s:System.String -&gt; string<br /><br />Full name: Informedica.GenUnits.Lib.Api.eval</div>
-<div class="tip" id="fs27">val conc : string<br /><br />Full name: Tutorial.conc</div>
-<div class="tip" id="fs28">val rate : string<br /><br />Full name: Tutorial.rate</div>
-<div class="tip" id="fs29">val dose : string<br /><br />Full name: Tutorial.dose</div>
-<div class="tip" id="fs30">val convert : s2:System.String -&gt; s1:string -&gt; string<br /><br />Full name: Informedica.GenUnits.Lib.Api.convert</div>
-<div class="tip" id="fs31">val ug1 : UnitGroup.UnitGroup<br /><br />Full name: Tutorial.ug1</div>
-<div class="tip" id="fs32">val fromString : s:System.String -&gt; UnitGroup.UnitGroup<br /><br />Full name: Informedica.GenUnits.Lib.UnitGroupModule.fromString</div>
-<div class="tip" id="fs33">val ug2 : UnitGroup.UnitGroup<br /><br />Full name: Tutorial.ug2</div>
-<div class="tip" id="fs34">val ug3 : UnitGroup.UnitGroup<br /><br />Full name: Tutorial.ug3</div>
-<div class="tip" id="fs35">val cg : UnitGroup.UnitGroup<br /><br />Full name: Tutorial.cg</div>
-<div class="tip" id="fs36">val toString : ug:UnitGroup.UnitGroup -&gt; string<br /><br />Full name: Informedica.GenUnits.Lib.UnitGroupModule.toString</div>
-<div class="tip" id="fs37">val getUnits : ug:UnitGroup.UnitGroup -&gt; CombiUnit.CombiUnit list<br /><br />Full name: Informedica.GenUnits.Lib.UnitGroupModule.getUnits</div>
-<div class="tip" id="fs38">Multiple items<br />module List<br /><br />from Microsoft.FSharp.Collections<br /><br />--------------------<br />type List&lt;&#39;T&gt; =<br />&#160;&#160;| ( [] )<br />&#160;&#160;| ( :: ) of Head: &#39;T * Tail: &#39;T list<br />&#160;&#160;interface IEnumerable<br />&#160;&#160;interface IEnumerable&lt;&#39;T&gt;<br />&#160;&#160;member Head : &#39;T<br />&#160;&#160;member IsEmpty : bool<br />&#160;&#160;member Item : index:int -&gt; &#39;T with get<br />&#160;&#160;member Length : int<br />&#160;&#160;member Tail : &#39;T list<br />&#160;&#160;static member Cons : head:&#39;T * tail:&#39;T list -&gt; &#39;T list<br />&#160;&#160;static member Empty : &#39;T list<br /><br />Full name: Microsoft.FSharp.Collections.List&lt;_&gt;</div>
-<div class="tip" id="fs39">val map : mapping:(&#39;T -&gt; &#39;U) -&gt; list:&#39;T list -&gt; &#39;U list<br /><br />Full name: Microsoft.FSharp.Collections.List.map</div>
-<div class="tip" id="fs40">val toString : cu:CombiUnit.CombiUnit -&gt; string<br /><br />Full name: Informedica.GenUnits.Lib.CombiUnitModule.toString</div>
-<div class="tip" id="fs41">val iter : action:(&#39;T -&gt; unit) -&gt; list:&#39;T list -&gt; unit<br /><br />Full name: Microsoft.FSharp.Collections.List.iter</div>
-<div class="tip" id="fs42">val printfn : format:Printf.TextWriterFormat&lt;&#39;T&gt; -&gt; &#39;T<br /><br />Full name: Microsoft.FSharp.Core.ExtraTopLevelOperators.printfn</div>
+<div class="tip" id="fs2">namespace Informedica.GenUtils</div>
+<div class="tip" id="fs3">namespace Informedica.GenUtils.Lib</div>
+<div class="tip" id="fs4">namespace Informedica.GenUtils.Lib.BCL</div>
+<div class="tip" id="fs5">namespace Informedica.GenUnits</div>
+<div class="tip" id="fs6">namespace Informedica.GenUnits.Lib</div>
+<div class="tip" id="fs7">module Constants<br /><br />from Informedica.GenUnits.Lib</div>
+<div class="tip" id="fs8">val print : s:string -&gt; unit<br /><br />Full name: Tutorial.print</div>
+<div class="tip" id="fs9">val s : string</div>
+<div class="tip" id="fs10">val printfn : format:Printf.TextWriterFormat&lt;&#39;T&gt; -&gt; &#39;T<br /><br />Full name: Microsoft.FSharp.Core.ExtraTopLevelOperators.printfn</div>
+<div class="tip" id="fs11">module Unit<br /><br />from Informedica.GenUnits.Lib</div>
+<div class="tip" id="fs12">module Units<br /><br />from Informedica.GenUnits.Lib.UnitModule</div>
+<div class="tip" id="fs13">module CombiUnit<br /><br />from Informedica.GenUnits.Lib</div>
+<div class="tip" id="fs14">module ValueUnit<br /><br />from Informedica.GenUnits.Lib</div>
+<div class="tip" id="fs15">module UnitGroup<br /><br />from Informedica.GenUnits.Lib</div>
+<div class="tip" id="fs16">val ( 500 mg ) : ValueUnit.ValueUnit<br /><br />Full name: Tutorial.( 500 mg )</div>
+<div class="tip" id="fs17">val create : v:BigRational -&gt; u:CombiUnit.CombiUnit -&gt; ValueUnit.ValueUnit<br /><br />Full name: Informedica.GenUnits.Lib.ValueUnitModule.create</div>
+<div class="tip" id="fs18">val withUnit : u:Unit.Unit -&gt; v:BigRational -&gt; CombiUnit.CombiUnit<br /><br />Full name: Informedica.GenUnits.Lib.CombiUnitModule.withUnit</div>
+<div class="tip" id="fs19">val milliGram : Unit.Unit<br /><br />Full name: Informedica.GenUnits.Lib.UnitModule.Units.milliGram</div>
+<div class="tip" id="fs20">val ( 2 dd ) : ValueUnit.ValueUnit<br /><br />Full name: Tutorial.( 2 dd )</div>
+<div class="tip" id="fs21">val count : Unit.Unit<br /><br />Full name: Informedica.GenUnits.Lib.UnitModule.Units.count</div>
+<div class="tip" id="fs22">val per : (BigRational -&gt; Unit.Unit -&gt; CombiUnit.CombiUnit -&gt; CombiUnit.CombiUnit)<br /><br />Full name: Informedica.GenUnits.Lib.CombiUnitModule.per</div>
+<div class="tip" id="fs23">val day : Unit.Unit<br /><br />Full name: Informedica.GenUnits.Lib.UnitModule.Units.day</div>
+<div class="tip" id="fs24">val toString : vu:ValueUnit.ValueUnit -&gt; string<br /><br />Full name: Informedica.GenUnits.Lib.ValueUnitModule.toString</div>
+<div class="tip" id="fs25">val tot : ValueUnit.ValueUnit<br /><br />Full name: Tutorial.tot</div>
+<div class="tip" id="fs26">val ( gram/week ) : CombiUnit.CombiUnit<br /><br />Full name: Tutorial.( gram/week )</div>
+<div class="tip" id="fs27">val gram : Unit.Unit<br /><br />Full name: Informedica.GenUnits.Lib.UnitModule.Units.gram</div>
+<div class="tip" id="fs28">val week : Unit.Unit<br /><br />Full name: Informedica.GenUnits.Lib.UnitModule.Units.week</div>
+<div class="tip" id="fs29">val convertTo : cu:CombiUnit.CombiUnit -&gt; vu:ValueUnit.ValueUnit -&gt; ValueUnit.ValueUnit<br /><br />Full name: Informedica.GenUnits.Lib.ValueUnitModule.convertTo</div>
+<div class="tip" id="fs30">val fromString : s:System.String -&gt; CombiUnit.CombiUnit<br /><br />Full name: Informedica.GenUnits.Lib.CombiUnitModule.fromString</div>
+<div class="tip" id="fs31">val fromString : s:string -&gt; ValueUnit.ValueUnit<br /><br />Full name: Informedica.GenUnits.Lib.ValueUnitModule.fromString</div>
+<div class="tip" id="fs32">module Api<br /><br />from Informedica.GenUnits.Lib</div>
+<div class="tip" id="fs33">val eval : s:System.String -&gt; string<br /><br />Full name: Informedica.GenUnits.Lib.Api.eval</div>
+<div class="tip" id="fs34">val conc : string<br /><br />Full name: Tutorial.conc</div>
+<div class="tip" id="fs35">val rate : string<br /><br />Full name: Tutorial.rate</div>
+<div class="tip" id="fs36">val dose : string<br /><br />Full name: Tutorial.dose</div>
+<div class="tip" id="fs37">val convert : s2:System.String -&gt; s1:string -&gt; string<br /><br />Full name: Informedica.GenUnits.Lib.Api.convert</div>
+<div class="tip" id="fs38">val ug1 : UnitGroup.UnitGroup<br /><br />Full name: Tutorial.ug1</div>
+<div class="tip" id="fs39">val fromString : s:System.String -&gt; UnitGroup.UnitGroup<br /><br />Full name: Informedica.GenUnits.Lib.UnitGroupModule.fromString</div>
+<div class="tip" id="fs40">val ug2 : UnitGroup.UnitGroup<br /><br />Full name: Tutorial.ug2</div>
+<div class="tip" id="fs41">val ug3 : UnitGroup.UnitGroup<br /><br />Full name: Tutorial.ug3</div>
+<div class="tip" id="fs42">val cg : UnitGroup.UnitGroup<br /><br />Full name: Tutorial.cg</div>
+<div class="tip" id="fs43">val toString : ug:UnitGroup.UnitGroup -&gt; string<br /><br />Full name: Informedica.GenUnits.Lib.UnitGroupModule.toString</div>
+<div class="tip" id="fs44">val getUnits : ug:UnitGroup.UnitGroup -&gt; CombiUnit.CombiUnit list<br /><br />Full name: Informedica.GenUnits.Lib.UnitGroupModule.getUnits</div>
+<div class="tip" id="fs45">Multiple items<br />module List<br /><br />from Microsoft.FSharp.Collections<br /><br />--------------------<br />type List&lt;&#39;T&gt; =<br />&#160;&#160;| ( [] )<br />&#160;&#160;| ( :: ) of Head: &#39;T * Tail: &#39;T list<br />&#160;&#160;interface IEnumerable<br />&#160;&#160;interface IEnumerable&lt;&#39;T&gt;<br />&#160;&#160;member Head : &#39;T<br />&#160;&#160;member IsEmpty : bool<br />&#160;&#160;member Item : index:int -&gt; &#39;T with get<br />&#160;&#160;member Length : int<br />&#160;&#160;member Tail : &#39;T list<br />&#160;&#160;static member Cons : head:&#39;T * tail:&#39;T list -&gt; &#39;T list<br />&#160;&#160;static member Empty : &#39;T list<br /><br />Full name: Microsoft.FSharp.Collections.List&lt;_&gt;</div>
+<div class="tip" id="fs46">val map : mapping:(&#39;T -&gt; &#39;U) -&gt; list:&#39;T list -&gt; &#39;U list<br /><br />Full name: Microsoft.FSharp.Collections.List.map</div>
+<div class="tip" id="fs47">val toString : cu:CombiUnit.CombiUnit -&gt; string<br /><br />Full name: Informedica.GenUnits.Lib.CombiUnitModule.toString</div>
+<div class="tip" id="fs48">val iter : action:(&#39;T -&gt; unit) -&gt; list:&#39;T list -&gt; unit<br /><br />Full name: Microsoft.FSharp.Collections.List.iter</div>
 
         </div>
         <div class="span3">
