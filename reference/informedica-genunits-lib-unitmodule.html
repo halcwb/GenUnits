@@ -129,11 +129,11 @@
             applyToUnit f u
           </code>
           <div class="tip" id="38">
-            <strong>Signature:</strong> f:(Unit -&gt; &#39;?6782) -&gt; u:Unit -&gt; &#39;?6782<br />
-                          <strong>Type parameters:</strong> '?6782          </div>
+            <strong>Signature:</strong> f:(Unit -&gt; &#39;?6783) -&gt; u:Unit -&gt; &#39;?6783<br />
+                          <strong>Type parameters:</strong> '?6783          </div>
         </td>
         <td class="xmldoc">
-            <a href="http://github.com/halcwb/GenUnits/tree/master/src/Informedica.GenUnits.lib/Unit.fs#L113-113" class="github-link">
+            <a href="http://github.com/halcwb/GenUnits/tree/master/src/Informedica.GenUnits.lib/Unit.fs#L122-122" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -147,11 +147,11 @@
             convert f u v
           </code>
           <div class="tip" id="39">
-            <strong>Signature:</strong> f:(BigRational -&gt; &#39;?6788 -&gt; &#39;?6789) -&gt; u:Unit -&gt; v:&#39;?6788 -&gt; &#39;?6789<br />
-                          <strong>Type parameters:</strong> '?6788, '?6789          </div>
+            <strong>Signature:</strong> f:(BigRational -&gt; &#39;?6789 -&gt; &#39;?6790) -&gt; u:Unit -&gt; v:&#39;?6789 -&gt; &#39;?6790<br />
+                          <strong>Type parameters:</strong> '?6789, '?6790          </div>
         </td>
         <td class="xmldoc">
-            <a href="http://github.com/halcwb/GenUnits/tree/master/src/Informedica.GenUnits.lib/Unit.fs#L123-123" class="github-link">
+            <a href="http://github.com/halcwb/GenUnits/tree/master/src/Informedica.GenUnits.lib/Unit.fs#L132-132" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -180,9 +180,31 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '41', 41)" onmouseover="showTip(event, '41', 41)">
-            distanceNotFound s
+            createGeneral n
           </code>
           <div class="tip" id="41">
+            <strong>Signature:</strong> n:Name -&gt; Unit<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/halcwb/GenUnits/tree/master/src/Informedica.GenUnits.lib/Unit.fs#L116-116" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Create a 'general' <a href="informedica-genunits-lib-unitmodule-unit.html" title="Unit"><code>Unit</code></a> with
+name, abbbreviation and groupname <strong>n</strong>
+and multiplier 1.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '42', 42)" onmouseover="showTip(event, '42', 42)">
+            distanceNotFound s
+          </code>
+          <div class="tip" id="42">
             <strong>Signature:</strong> s:string -&gt; string<br />
                       </div>
         </td>
@@ -197,33 +219,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '42', 42)" onmouseover="showTip(event, '42', 42)">
+          <code onmouseout="hideTip(event, '43', 43)" onmouseover="showTip(event, '43', 43)">
             eqGroup u1 u2
           </code>
-          <div class="tip" id="42">
+          <div class="tip" id="43">
             <strong>Signature:</strong> u1:Unit -&gt; u2:Unit -&gt; bool<br />
                       </div>
         </td>
         <td class="xmldoc">
-            <a href="http://github.com/halcwb/GenUnits/tree/master/src/Informedica.GenUnits.lib/Unit.fs#L134-134" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '43', 43)" onmouseover="showTip(event, '43', 43)">
-            getAbbreviation 
-          </code>
-          <div class="tip" id="43">
-            <strong>Signature:</strong> Unit -&gt; Name * Name list<br />
-                      </div>
-        </td>
-        <td class="xmldoc">
-            <a href="http://github.com/halcwb/GenUnits/tree/master/src/Informedica.GenUnits.lib/Unit.fs#L121-121" class="github-link">
+            <a href="http://github.com/halcwb/GenUnits/tree/master/src/Informedica.GenUnits.lib/Unit.fs#L143-143" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -234,14 +238,14 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '44', 44)" onmouseover="showTip(event, '44', 44)">
-            getGroupName 
+            getAbbreviation 
           </code>
           <div class="tip" id="44">
-            <strong>Signature:</strong> Unit -&gt; Name<br />
+            <strong>Signature:</strong> Unit -&gt; Name * Name list<br />
                       </div>
         </td>
         <td class="xmldoc">
-            <a href="http://github.com/halcwb/GenUnits/tree/master/src/Informedica.GenUnits.lib/Unit.fs#L117-117" class="github-link">
+            <a href="http://github.com/halcwb/GenUnits/tree/master/src/Informedica.GenUnits.lib/Unit.fs#L130-130" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -252,14 +256,14 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '45', 45)" onmouseover="showTip(event, '45', 45)">
-            getMultiplier 
+            getGroupName 
           </code>
           <div class="tip" id="45">
-            <strong>Signature:</strong> Unit -&gt; BigRational<br />
+            <strong>Signature:</strong> Unit -&gt; Name<br />
                       </div>
         </td>
         <td class="xmldoc">
-            <a href="http://github.com/halcwb/GenUnits/tree/master/src/Informedica.GenUnits.lib/Unit.fs#L115-115" class="github-link">
+            <a href="http://github.com/halcwb/GenUnits/tree/master/src/Informedica.GenUnits.lib/Unit.fs#L126-126" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -270,14 +274,14 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '46', 46)" onmouseover="showTip(event, '46', 46)">
-            getName 
+            getMultiplier 
           </code>
           <div class="tip" id="46">
-            <strong>Signature:</strong> Unit -&gt; Name * Name list<br />
+            <strong>Signature:</strong> Unit -&gt; BigRational<br />
                       </div>
         </td>
         <td class="xmldoc">
-            <a href="http://github.com/halcwb/GenUnits/tree/master/src/Informedica.GenUnits.lib/Unit.fs#L119-119" class="github-link">
+            <a href="http://github.com/halcwb/GenUnits/tree/master/src/Informedica.GenUnits.lib/Unit.fs#L124-124" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -288,9 +292,27 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '47', 47)" onmouseover="showTip(event, '47', 47)">
-            massNotFound s
+            getName 
           </code>
           <div class="tip" id="47">
+            <strong>Signature:</strong> Unit -&gt; Name * Name list<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/halcwb/GenUnits/tree/master/src/Informedica.GenUnits.lib/Unit.fs#L128-128" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '48', 48)" onmouseover="showTip(event, '48', 48)">
+            massNotFound s
+          </code>
+          <div class="tip" id="48">
             <strong>Signature:</strong> s:string -&gt; string<br />
                       </div>
         </td>
@@ -305,10 +327,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '48', 48)" onmouseover="showTip(event, '48', 48)">
+          <code onmouseout="hideTip(event, '49', 49)" onmouseover="showTip(event, '49', 49)">
             message 
           </code>
-          <div class="tip" id="48">
+          <div class="tip" id="49">
             <strong>Signature:</strong> string<br />
                       </div>
         </td>
@@ -323,10 +345,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '49', 49)" onmouseover="showTip(event, '49', 49)">
+          <code onmouseout="hideTip(event, '50', 50)" onmouseover="showTip(event, '50', 50)">
             raiseExc m
           </code>
-          <div class="tip" id="49">
+          <div class="tip" id="50">
             <strong>Signature:</strong> m:Message -&gt; &#39;?6761<br />
                           <strong>Type parameters:</strong> '?6761          </div>
         </td>
@@ -341,10 +363,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '50', 50)" onmouseover="showTip(event, '50', 50)">
+          <code onmouseout="hideTip(event, '51', 51)" onmouseover="showTip(event, '51', 51)">
             timeNotFound s
           </code>
-          <div class="tip" id="50">
+          <div class="tip" id="51">
             <strong>Signature:</strong> s:string -&gt; string<br />
                       </div>
         </td>
@@ -359,33 +381,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '51', 51)" onmouseover="showTip(event, '51', 51)">
-            toBase 
-          </code>
-          <div class="tip" id="51">
-            <strong>Signature:</strong> Unit -&gt; BigRational -&gt; BigRational<br />
-                      </div>
-        </td>
-        <td class="xmldoc">
-            <a href="http://github.com/halcwb/GenUnits/tree/master/src/Informedica.GenUnits.lib/Unit.fs#L127-127" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
           <code onmouseout="hideTip(event, '52', 52)" onmouseover="showTip(event, '52', 52)">
-            toUnit 
+            toBase 
           </code>
           <div class="tip" id="52">
             <strong>Signature:</strong> Unit -&gt; BigRational -&gt; BigRational<br />
                       </div>
         </td>
         <td class="xmldoc">
-            <a href="http://github.com/halcwb/GenUnits/tree/master/src/Informedica.GenUnits.lib/Unit.fs#L125-125" class="github-link">
+            <a href="http://github.com/halcwb/GenUnits/tree/master/src/Informedica.GenUnits.lib/Unit.fs#L136-136" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -396,9 +400,27 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '53', 53)" onmouseover="showTip(event, '53', 53)">
-            unitNotFound s
+            toUnit 
           </code>
           <div class="tip" id="53">
+            <strong>Signature:</strong> Unit -&gt; BigRational -&gt; BigRational<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/halcwb/GenUnits/tree/master/src/Informedica.GenUnits.lib/Unit.fs#L134-134" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '54', 54)" onmouseover="showTip(event, '54', 54)">
+            unitNotFound s
+          </code>
+          <div class="tip" id="54">
             <strong>Signature:</strong> s:string -&gt; string<br />
                       </div>
         </td>
@@ -413,15 +435,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '54', 54)" onmouseover="showTip(event, '54', 54)">
+          <code onmouseout="hideTip(event, '55', 55)" onmouseover="showTip(event, '55', 55)">
             unitToUnit succ fail u1 u2
           </code>
-          <div class="tip" id="54">
-            <strong>Signature:</strong> succ:((BigRational -&gt; BigRational) -&gt; &#39;?6793) -&gt; fail:(Message -&gt; &#39;?6793) -&gt; u1:Unit -&gt; u2:Unit -&gt; &#39;?6793<br />
-                          <strong>Type parameters:</strong> '?6793          </div>
+          <div class="tip" id="55">
+            <strong>Signature:</strong> succ:((BigRational -&gt; BigRational) -&gt; &#39;?6794) -&gt; fail:(Message -&gt; &#39;?6794) -&gt; u1:Unit -&gt; u2:Unit -&gt; &#39;?6794<br />
+                          <strong>Type parameters:</strong> '?6794          </div>
         </td>
         <td class="xmldoc">
-            <a href="http://github.com/halcwb/GenUnits/tree/master/src/Informedica.GenUnits.lib/Unit.fs#L129-129" class="github-link">
+            <a href="http://github.com/halcwb/GenUnits/tree/master/src/Informedica.GenUnits.lib/Unit.fs#L138-138" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -431,10 +453,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '55', 55)" onmouseover="showTip(event, '55', 55)">
+          <code onmouseout="hideTip(event, '56', 56)" onmouseover="showTip(event, '56', 56)">
             weightNotFound s
           </code>
-          <div class="tip" id="55">
+          <div class="tip" id="56">
             <strong>Signature:</strong> s:string -&gt; string<br />
                       </div>
         </td>
